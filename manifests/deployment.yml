@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: samplewebapp 
+  name: samplewebapp2 
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: samplewebapp
+      app: samplewebapp2
   template:
     metadata:
       labels:
-        app: samplewebapp 
+        app: samplewebapp2 
     spec:
       containers:
-        - name: samplewebapp 
+        - name: samplewebapp2 
           image: clusterregister1976.azurecr.io/samplewebapp
           ports:
           - containerPort: 80
